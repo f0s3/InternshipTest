@@ -15,9 +15,9 @@ namespace InternshipTest {
 
             Internship internship = new Internship("Interlink");
             Console.WriteLine("List of internship's students:");
-            internship.PrintStudentsNames();
+            Console.WriteLine(internship.GetStudentsNames());
             Console.WriteLine("List of university students:");
-            university.PrintStudentsNames();
+            Console.WriteLine(university.GetStudentsNames());
         }
     }
 }

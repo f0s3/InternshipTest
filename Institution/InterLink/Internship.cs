@@ -28,5 +28,13 @@ namespace InternshipTest.Institution.InterLink {
             }
             return s;
         }
+
+        public void AddStudentsFromUniversity(University university) {
+            foreach (Student s in university.GetStudents()) {
+                if (s.GetLevelOfKnowledge() > university.GetAverage()) {
+                    studentsList.Add(s);
+                }
+            }
+        }
     }
 }

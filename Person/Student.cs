@@ -4,6 +4,7 @@ namespace InternshipTest.Person {
         Knowledge knowledge;
         public Student(string name) {
             this.name = name;
+            this.knowledge = new Knowledge(0);
         }
 
         public Student(string name, Knowledge knowledge) {
@@ -17,6 +18,14 @@ namespace InternshipTest.Person {
 
         public void SetKnowledge(Knowledge knowledge) {
             this.knowledge = knowledge;
+        }
+
+        public Knowledge GetKnowledge() {
+            return this.knowledge;
+        }
+
+        public int GetLevelOfKnowledge() {
+            return this.knowledge.GetKnowledgeLevel();
         }
     }
 }

@@ -4,5 +4,9 @@ namespace InternshipTest {
         public Knowledge(int level) {
             this.level = level;
         }
+
+        public int GetKnowledgeLevel() {
+            return this.level;
+        }
     }
 }
